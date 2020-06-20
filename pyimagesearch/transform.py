@@ -41,7 +41,7 @@ def four_point_transform(image, pts):
 	# compute the height of the new image, which will be the
 	# maximum distance between the top-right and bottom-right
 	# y-coordinates or the top-left and bottom-left y-coordinates
-	heightA = np.sqrt(((tr[0] - br[0]) ** 2) + ((tr[1] - br[1]) ** 2))
+	heightA = np.sqrt(((tr[0] - br[0]) ** 2) + ((tr[1] - br[1]) ** 2)) 
 	heightB = np.sqrt(((tl[0] - bl[0]) ** 2) + ((tl[1] - bl[1]) ** 2))
 	maxHeight = max(int(heightA), int(heightB))
 
